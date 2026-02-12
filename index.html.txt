@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>ARO 서비스 의뢰서</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        .container { max-width: 800px; margin: auto; border: 2px solid #333; padding: 20px; }
+        h2 { text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        th { background-color: #f9f9f9; width: 15%; }
+        input[type="text"], input[type="email"], textarea { width: 95%; border: none; outline: none; }
+        .submit-btn { width: 100%; padding: 15px; background: #00458d; color: white; border: none; cursor: pointer; font-size: 16px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>ARO서비스 의뢰서(통계)</h2>
+    <form action="https://formspree.io/f/5higher@naver.com" method="POST">
+        <table>
+            <tr>
+                <th rowspan="3">연구자</th>
+                <td>성명</td><td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>소속</td><td><input type="text" name="org"></td>
+                <td>직위</td><td><input type="text" name="rank"></td>
+            </tr>
+            <tr>
+                <td>연락처</td><td><input type="text" name="tel"></td>
+                <td>전자메일</td><td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <th>연구 제목</th>
+                <td colspan="4"><input type="text" name="title"></td>
+            </tr>
+            <tr>
+                <th>상담내용</th>
+                <td colspan="4"><textarea name="content" rows="5"></textarea></td>
+            </tr>
+        </table>
+        <button type="submit" class="submit-btn">신청서 제출하기</button>
+    </form>
+</div>
+
+<script>
+    // 여기에 자바스크립트가 들어갑니다.
+</script>
+
+</body>
+</html>
